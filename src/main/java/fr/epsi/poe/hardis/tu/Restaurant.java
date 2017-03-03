@@ -25,6 +25,7 @@ public class Restaurant {
 
     Restaurant() {
         setOuvert(true);
+        setVille("");
     }
 
     public String getNom() {
@@ -71,7 +72,7 @@ public class Restaurant {
     }
 
     public String getDepartement() {
-        return getCodePostal().substring(0, 1);
+        return getCodePostal().substring(0,1);
     }
 
     public String getVille() {
