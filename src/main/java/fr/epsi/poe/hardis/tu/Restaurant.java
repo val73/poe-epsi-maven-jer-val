@@ -8,7 +8,7 @@ public class Restaurant {
     private String nom;
     private String adresse;
     private String codePostal;
-    private String ville;
+    private String ville=null;
     private String telephone;
 
     public String getPays() {
