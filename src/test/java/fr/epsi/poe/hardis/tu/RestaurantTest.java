@@ -64,9 +64,11 @@ public class RestaurantTest {
     @Test
     public void testThatDptmtIs2DigitsLong(){
         // Arrange
+        restaurant.setCodePostal("75000");
         // Act
         //Assert
-        assertTrue("Le département ne fait pas 2 caractères", restaurant.getDepartement().length() == 2);
+        assertTrue("Le département ne fait pas 2 caractères",
+                restaurant.getDepartement().length() == 2);
     }
 
     @Test
