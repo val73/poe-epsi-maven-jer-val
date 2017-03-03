@@ -60,4 +60,20 @@ public class RestaurantTest {
         //Assert
         assertTrue(restaurant.getAdresse().contains("FRANCE"));
     }
+
+    @Test
+    public void testThatDptmtIs2DigitsLong(){
+        // Arrange
+        // Act
+        //Assert
+        assertTrue("Le département ne fait pas 2 caractères", restaurant.getDepartement().length() == 2);
+    }
+
+    @Test
+    public void testThatVilleIsNotNull(){
+        // Arrange
+        // Act
+        //Assert
+        assertTrue("La ville n'existe pas", restaurant.getVille() != null);
+    }
 }
