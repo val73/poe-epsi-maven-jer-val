@@ -67,8 +67,8 @@ public class RestaurantTest {
         restaurant.setCodePostal("75000");
         // Act
         //Assert
-        assertTrue("Le département ne fait pas 2 caractères",
-                restaurant.getDepartement().length() == 2);
+        assertEquals("Le département ne fait pas 2 caractères", 2,
+                restaurant.getDepartement().length() );
     }
 
     @Test
