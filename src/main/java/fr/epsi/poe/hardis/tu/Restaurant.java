@@ -8,7 +8,7 @@ public class Restaurant {
     private String nom;
     private String adresse;
     private String codePostal;
-    private String ville=null;
+    private String ville;
     private String telephone;
     private String menu;
 
@@ -24,9 +24,18 @@ public class Restaurant {
 
     private boolean ouvert;
 
-    Restaurant() {
+    public Restaurant() {
         setOuvert(true);
         setVille("");
+    }
+
+    public Restaurant(String nom, String adresse, String codePostal, String ville, String telephone) {
+        this();
+        this.nom = nom;
+        this.adresse = adresse;
+        this.codePostal = codePostal;
+        this.ville = ville;
+        this.telephone = telephone;
     }
 
     public String getNom() {
@@ -90,5 +99,17 @@ public class Restaurant {
 
     public void setMenu(String menu) {
         this.menu = menu;
+    }
+    @Override
+    public String toString() {
+        return "Restaurant{" +
+                "nom='" + nom + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", codePostal='" + codePostal + '\'' +
+                ", ville='" + ville + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", pays='" + pays + '\'' +
+                ", ouvert=" + ouvert +
+                '}';
     }
 }
