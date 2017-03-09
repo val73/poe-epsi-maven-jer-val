@@ -75,7 +75,19 @@ public class RestaurantTest {
     public void testThatVilleIsNotNull(){
         // Arrange
         // Act
-        //Assert
+        // Assert
         assertTrue("La ville n'existe pas", restaurant.getVille() != null);
     }
+
+    @Test
+    public void testThatRestaurantIsCreatedWithParameters(){
+        // Arrange
+        Restaurant restPar = new Restaurant("Le nom", "15 Rue cccc","69003", "Lyon", "06.20.32.32.32");
+        // Act
+        // Assert
+        assertTrue("Le constructeur n'initialise pas correctement", (restPar.getNom() == "Le nom") && (restPar.getCodePostal() == "69003"));
+
+    }
+
+
 }
