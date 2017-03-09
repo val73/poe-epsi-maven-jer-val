@@ -10,6 +10,7 @@ public class Restaurant {
     private String codePostal;
     private String ville=null;
     private String telephone;
+    private String menu;
 
     public String getPays() {
         return pays;
@@ -83,4 +84,11 @@ public class Restaurant {
         this.ville = ville;
     }
 
+    public String getMenu() {
+        return menu;
+    }
+
+    public void setMenu(String menu) {
+        this.menu = menu;
+    }
 }
