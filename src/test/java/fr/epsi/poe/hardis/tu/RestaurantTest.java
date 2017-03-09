@@ -86,6 +86,15 @@ public class RestaurantTest {
         // Act
         // Assert
         assertTrue("Le constructeur n'initialise pas correctement", (restPar.getNom() == "Le nom") && (restPar.getCodePostal() == "69003"));
+    }
+
+    @Test
+    public void testThatNameIsInLowerCase(){
+        // Arrange
+        // Act
+        restaurant.setNom("NNNNNNNN");
+        // Assert
+        assertEquals("Le nom n'est pas en minuscule","nnnnnnnn",restaurant.getNom());
 
     }
 
