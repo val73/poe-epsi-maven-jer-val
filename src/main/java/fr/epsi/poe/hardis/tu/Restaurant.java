@@ -33,7 +33,7 @@ public class Restaurant {
         this();
         this.nom = nom;
         this.adresse = adresse;
-        this.codePostal = codePostal;
+        this.setCodePostal(codePostal);
         this.ville = ville;
         this.setTelephone(telephone);
     }
