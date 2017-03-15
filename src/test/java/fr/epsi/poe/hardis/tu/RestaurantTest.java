@@ -91,10 +91,11 @@ public class RestaurantTest {
     @Test
     public void testThatNameIsInLowerCase(){
         // Arrange
+        String sTest = "NNNNNNNN";
         // Act
-        restaurant.setNom("NNNNNNNN");
+        restaurant.setNom(sTest);
         // Assert
-        assertEquals("Le nom n'est pas en minuscule","nnnnnnnn",restaurant.getNom());
+        assertEquals("Le nom n'est pas en minuscule",sTest.toLowerCase(),restaurant.getNom());
 
     }
 
