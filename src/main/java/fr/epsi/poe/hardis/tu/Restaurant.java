@@ -35,7 +35,7 @@ public class Restaurant {
         this.adresse = adresse;
         this.codePostal = codePostal;
         this.ville = ville;
-        this.telephone = telephone;
+        this.setTelephone(telephone);
     }
 
     public String getNom() {
