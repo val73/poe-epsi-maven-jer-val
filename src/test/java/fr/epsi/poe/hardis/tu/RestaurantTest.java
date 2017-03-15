@@ -99,5 +99,14 @@ public class RestaurantTest {
 
     }
 
+    @Test
+    public void testThatCodePostalIs5DigitsLong(){
+        // Arrange
+        restaurant.setCodePostal("75000");
+        // Act
+        //Assert
+        assertEquals("Le code postal ne fait pas 5 caractères", 5,
+                restaurant.getCodePostal().length() );
+    }
 
 }
